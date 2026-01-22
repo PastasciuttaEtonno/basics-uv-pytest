@@ -1,0 +1,39 @@
+name: Python Tests (Ubuntu)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    name: Run Pytest
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Scarica il codice dal repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Installa 'uv' usando l'azione ufficiale (molto più veloce)
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true # Attiva la cache per velocizzare i test futuri
+
+      # 3. Specifica la versione di Python da usare
+      - name: Set up Python
+        run: uv python install 3.12
+
+      # 4. Installa le dipendenze dal file requirements.txt
+      # Aggiungiamo 'pytest' esplicitamente nel caso non sia nel file
+      - name: Install dependencies
+        run: |
+          uv venv
+          uv pip install -r requirements.txt
+          uv pip install pytest
+
+      # 5. Esecuzione dei test
+      - name: Run tests
+        run: uv run pytest
