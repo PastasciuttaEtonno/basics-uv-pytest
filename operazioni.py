@@ -10,5 +10,6 @@ def sottrazione(a,b):
 
 def moltiplicazione(a,b):
     pass
+
 def divisione(a,b):
     pass
