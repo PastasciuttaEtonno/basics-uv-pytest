@@ -37,6 +37,7 @@ fastapi
 uvicorn
 pandas
 pytest
+```
 
 ### B. Compilare (Locking)
 Genera il file requirements.txt risolvendo tutte le versioni. Esegui questo comando ogni volta che modifichi requirements.in.
