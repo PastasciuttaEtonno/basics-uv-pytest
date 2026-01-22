@@ -12,21 +12,32 @@ L'approccio moderno prevede di separare le dipendenze *astratte* (quelle che vuo
 ```bash
 # MacOS / Linux
 curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
-
+```
+```bash
 # Windows
 powershell -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/install.ps1) | iex"
+```
+
 
 # Crea la cartella .venv
+```bash
 uv venv
+```
 
 # Attiva l'ambiente (MacOS/Linux)
+```bash
 source .venv/bin/activate
+```
 
 # Attiva l'ambiente (Windows)
+```bash
 .venv\Scripts\activate
+```
 
 # In alternativa si possono lanciare script e comandi senza attivare l' ambiente manualmente
+```bash
 uv run "comando" 
+```
 
 ### A. Il file requirements.in
 Crea un file chiamato `requirements.in`. Qui elenchi solo le librerie principali che usi, senza preoccuparti troppo delle versioni o delle sottodipendenze.
