@@ -1,0 +1,74 @@
+# --- Byte-compiled / Ottimizzazione / DLL ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Distribuzione / Packaging ---
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- PyInstaller ---
+# Di solito questi file vengono creati dallo script di build
+*.manifest
+*.spec
+
+# --- Installer logs ---
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Unit Test / Coverage ---
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+
+# --- Ambienti Virtuali (Virtual Environments) ---
+# Nomi comuni per le cartelle venv
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# --- IDE e Editor di Testo ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- File di Sistema Operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Variabili d'Ambiente e Segreti (IMPORTANTE) ---
+# Non caricare mai file che contengono chiavi API o password
+.env
+.env.local
+.env.*.local
