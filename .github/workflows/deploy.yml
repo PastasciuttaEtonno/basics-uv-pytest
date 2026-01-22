@@ -2,10 +2,11 @@ name: Python Tests (Ubuntu)
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "master" ] # Parte sui push verso main o master
   pull_request:
-    branches: [ "main" ]
-
+    branches: [ "main", "master" ] # Parte sulle PR verso main o master
+  workflow_dispatch: # Ti permette di lanciarla a mano dal sito GitHub (UTILE PER TEST)
+  
 jobs:
   test:
     name: Run Pytest
