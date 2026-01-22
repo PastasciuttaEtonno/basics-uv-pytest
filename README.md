@@ -19,22 +19,22 @@ powershell -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/insta
 ```
 
 
-# Crea la cartella .venv
+### Crea la cartella .venv
 ```bash
 uv venv
 ```
 
-# Attiva l'ambiente (MacOS/Linux)
+### Attiva l'ambiente (MacOS/Linux)
 ```bash
 source .venv/bin/activate
 ```
 
-# Attiva l'ambiente (Windows)
+### Attiva l'ambiente (Windows)
 ```bash
 .venv\Scripts\activate
 ```
 
-# In alternativa si possono lanciare script e comandi senza attivare l' ambiente manualmente
+### In alternativa si possono lanciare script e comandi senza attivare l' ambiente manualmente
 ```bash
 uv run "comando" 
 ```
